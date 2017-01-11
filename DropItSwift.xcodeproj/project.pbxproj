@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		F278916F1DF247A100D8DA80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278916E1DF247A100D8DA80 /* AppDelegate.swift */; };
-		F27891711DF247A100D8DA80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27891701DF247A100D8DA80 /* ViewController.swift */; };
 		F27891741DF247A100D8DA80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F27891721DF247A100D8DA80 /* Main.storyboard */; };
 		F27891761DF247A100D8DA80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F27891751DF247A100D8DA80 /* Assets.xcassets */; };
 		F27891791DF247A100D8DA80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F27891771DF247A100D8DA80 /* LaunchScreen.storyboard */; };
+		F27891821DF247EA00D8DA80 /* DropItView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27891811DF247EA00D8DA80 /* DropItView.swift */; };
+		F27891841DF2480000D8DA80 /* DropItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27891831DF2480000D8DA80 /* DropItViewController.swift */; };
+		F27891861DF24CB700D8DA80 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27891851DF24CB700D8DA80 /* UIKitExtensions.swift */; };
+		F27891881DF2542B00D8DA80 /* FallingObjectBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27891871DF2542B00D8DA80 /* FallingObjectBehavior.swift */; };
+		F278918A1DF2624C00D8DA80 /* NamedBezierPathsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27891891DF2624C00D8DA80 /* NamedBezierPathsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F278916B1DF247A100D8DA80 /* DropItSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropItSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F278916E1DF247A100D8DA80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F27891701DF247A100D8DA80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F27891731DF247A100D8DA80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F27891751DF247A100D8DA80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F27891781DF247A100D8DA80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F278917A1DF247A100D8DA80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F27891811DF247EA00D8DA80 /* DropItView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropItView.swift; sourceTree = "<group>"; };
+		F27891831DF2480000D8DA80 /* DropItViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropItViewController.swift; sourceTree = "<group>"; };
+		F27891851DF24CB700D8DA80 /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		F27891871DF2542B00D8DA80 /* FallingObjectBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingObjectBehavior.swift; sourceTree = "<group>"; };
+		F27891891DF2624C00D8DA80 /* NamedBezierPathsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamedBezierPathsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		F278916D1DF247A100D8DA80 /* DropItSwift */ = {
 			isa = PBXGroup;
 			children = (
+				F278918B1DF2634500D8DA80 /* Model */,
+				F278918C1DF2634E00D8DA80 /* Views */,
+				F278918D1DF2635800D8DA80 /* Controllers */,
+				F27891801DF247BC00D8DA80 /* Supporting Files */,
+			);
+			path = DropItSwift;
+			sourceTree = "<group>";
+		};
+		F27891801DF247BC00D8DA80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				F278916E1DF247A100D8DA80 /* AppDelegate.swift */,
-				F27891701DF247A100D8DA80 /* ViewController.swift */,
-				F27891721DF247A100D8DA80 /* Main.storyboard */,
 				F27891751DF247A100D8DA80 /* Assets.xcassets */,
 				F27891771DF247A100D8DA80 /* LaunchScreen.storyboard */,
 				F278917A1DF247A100D8DA80 /* Info.plist */,
 			);
-			path = DropItSwift;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F278918B1DF2634500D8DA80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F27891851DF24CB700D8DA80 /* UIKitExtensions.swift */,
+				F27891871DF2542B00D8DA80 /* FallingObjectBehavior.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F278918C1DF2634E00D8DA80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F27891721DF247A100D8DA80 /* Main.storyboard */,
+				F27891891DF2624C00D8DA80 /* NamedBezierPathsView.swift */,
+				F27891811DF247EA00D8DA80 /* DropItView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F278918D1DF2635800D8DA80 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F27891831DF2480000D8DA80 /* DropItViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F27891711DF247A100D8DA80 /* ViewController.swift in Sources */,
+				F27891841DF2480000D8DA80 /* DropItViewController.swift in Sources */,
+				F27891821DF247EA00D8DA80 /* DropItView.swift in Sources */,
+				F278918A1DF2624C00D8DA80 /* NamedBezierPathsView.swift in Sources */,
+				F27891881DF2542B00D8DA80 /* FallingObjectBehavior.swift in Sources */,
+				F27891861DF24CB700D8DA80 /* UIKitExtensions.swift in Sources */,
 				F278916F1DF247A100D8DA80 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -248,7 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -302,6 +350,7 @@
 				F278917F1DF247A100D8DA80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
